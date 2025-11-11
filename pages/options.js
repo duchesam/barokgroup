@@ -305,7 +305,7 @@ export default function OptionsPage() {
             (571) 275-3720
           </a>
           <a
-            href="mailto:hello@barokgroup.com"
+            href="mailto:hello@barokgroup.org"
             style={{
               border: "1px solid #2563eb",
               color: "#2563eb",
@@ -314,7 +314,7 @@ export default function OptionsPage() {
               fontWeight: 700,
             }}
           >
-            hello@barokgroup.com
+            hello@barokgroup.org
           </a>
         </div>
       </section>
