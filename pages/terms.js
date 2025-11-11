@@ -26,7 +26,7 @@ export default function Terms(){
         <h3>7. Changes</h3>
         <p>We may update these Terms at any time by posting a revised version on the Site.</p>
         <h3>8. Contact</h3>
-        <p>Questions about these Terms? Email <a href="mailto:hello@barokgroup.com">hello@barokgroup.com</a>.</p>
+        <p>Questions about these Terms? Email <a href="mailto:hello@barokgroup.org">hello@barokgroup.org</a>.</p>
       </main>
       <Footer />
     </>
