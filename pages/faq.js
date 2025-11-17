@@ -9,7 +9,7 @@ const QA = ({ q, a }) => (
 export default function FAQ(){
   return (
     <>
-      <Head><title>FAQ – Barok Group</title></Head>
+      <Head><title>FAQ – Baruch Ermi</title></Head>
       <Header />
       <main className="container content">
         <h1>Frequently Asked Questions</h1>
