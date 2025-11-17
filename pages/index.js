@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 export default function Home(){
   return (
     <>
-      <Head><title>Barok Group – Nationwide Foreclosure Help</title></Head>
+      <Head><title>Baruch Ermi – Nationwide Foreclosure Help</title></Head>
       <Header />
       <main>
         <section className="hero container">
