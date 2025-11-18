@@ -58,10 +58,10 @@ export default function OptionsPage() {
   return (
     <>
       <Head>
-        <title>Options | Barok Group</title>
+        <title>Options | Baruch Ermi</title>
         <meta
           name="description"
-          content="Understand every option to stop foreclosure or resolve mortgage arrears—clearly explained by Barok Group."
+          content="Understand every option to stop foreclosure or resolve mortgage arrears—clearly explained by Baruch Ermi."
         />
       </Head>
 
@@ -305,7 +305,7 @@ export default function OptionsPage() {
             (571) 275-3720
           </a>
           <a
-            href="mailto:hello@barokgroup.org"
+            href="mailto:admin@baruchermi.org"
             style={{
               border: "1px solid #2563eb",
               color: "#2563eb",
@@ -314,7 +314,7 @@ export default function OptionsPage() {
               fontWeight: 700,
             }}
           >
-            hello@barokgroup.org
+            admin@baruchermi.org
           </a>
         </div>
       </section>
@@ -327,7 +327,7 @@ export default function OptionsPage() {
         }}
       >
         <small>
-          © {new Date().getFullYear()} Barok Group. All rights reserved.{" "}
+          © {new Date().getFullYear()} Baruch Ermi. All rights reserved.{" "}
           <a href="/terms">Terms &amp; Conditions</a>
         </small>
       </footer>
