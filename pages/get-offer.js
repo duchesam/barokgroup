@@ -9,7 +9,7 @@ export default function GetOffer(){
       <Header />
       <main className="container content">
         <h1>Get a Cash Offer</h1>
-        <p>Email <a href="mailto:admin@baruchermi.org">admin@baruchoermi.org</a> with your property address and timeline, or call <a href="tel:+15712753720">(571) 275-3720</a>. We’ll reply quickly.</p>
+        <p>Email <a href="mailto:admin@baruchermi.org">admin@baruchermi.org</a> with your property address and timeline, or call <a href="tel:+(904) 478-9306">(904) 478-9306</a>. We’ll reply quickly.</p>
       </main>
       <Footer />
     </>
