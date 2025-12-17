@@ -10,7 +10,7 @@ export default function Terms(){
       <main className="container content">
         <h1>Terms & Conditions</h1>
         <p className="small">Last updated: 2025-10-31</p>
-        <p>Welcome to www.barokgroup.com (“Site”). By accessing or using the Site, you agree to these Terms & Conditions. If you do not agree, please do not use the Site.</p>
+        <p>Welcome to www.barokgroup.org (“Site”). By accessing or using the Site, you agree to these Terms & Conditions. If you do not agree, please do not use the Site.</p>
         <h3>1. Services</h3>
         <p>Barok Group provides information and introductions related to real-estate options for distressed or time-sensitive situations. We are not a law firm, tax advisor, or credit counselor and do not provide legal, tax, or credit advice.</p>
         <h3>2. No Guarantees</h3>
@@ -26,7 +26,7 @@ export default function Terms(){
         <h3>7. Changes</h3>
         <p>We may update these Terms at any time by posting a revised version on the Site.</p>
         <h3>8. Contact</h3>
-        <p>Questions about these Terms? Email <a href="mailto:hello@barokgroup.org">hello@barokgroup.org</a>.</p>
+        <p>Questions about these Terms? Email <a href="mailto:admin@baruchermi.org">admin@baruchermi.org</a>.</p>
       </main>
       <Footer />
     </>
