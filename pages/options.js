@@ -293,7 +293,7 @@ export default function OptionsPage() {
         </div>
         <div style={{ justifySelf: "end", display: "flex", gap: 12 }}>
           <a
-            href="tel:+15712753720"
+            href="tel:+(904) 478-9306"
             style={{
               background: "#2563eb",
               color: "white",
