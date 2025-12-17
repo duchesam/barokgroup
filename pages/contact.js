@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 export default function Contact(){
   return (
     <>
-      <Head><title>Contact – Baruch Ermi</title></Head>
+      <Head><title>Contact – Barok Group</title></Head>
       <Header />
       <main className="container content">
         <h1>Get in Touch</h1>
