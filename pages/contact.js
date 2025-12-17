@@ -9,7 +9,7 @@ export default function Contact(){
       <Header />
       <main className="container content">
         <h1>Get in Touch</h1>
-        <p>Call <a href="tel:+15712753720">(571) 275-3720</a> or email <a href="mailto:admin@baruchermi.org">admin@baruchermi.org</a>.</p>
+        <p>Call <a href="tel:+(904) 478-9306">((904) 478-9306)</a> or email <a href="mailto:admin@baruchermi.org">admin@baruchermi.org</a>.</p>
         <div className="card" style={{maxWidth:680}}>
           <h3>Quick Message</h3>
           <p>Clicking the button opens your email app with a pre-filled subject and body.</p>
