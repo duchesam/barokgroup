@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 export default function GetOffer(){
   return (
     <>
-      <Head><title>Get Free Offer – Baruch Ermi</title></Head>
+      <Head><title>Get Free Offer – Barok Group</title></Head>
       <Header />
       <main className="container content">
         <h1>Get a Cash Offer</h1>
