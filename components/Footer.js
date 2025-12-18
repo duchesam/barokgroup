@@ -20,7 +20,7 @@ export default function Footer(){
         </div>
         <div>
           <h4>Get in Touch</h4>
-          <p>Call: <a href="tel:+15712753720">(571) 275-3720</a><br/>Email: <a href="mailto:hello@barokgroup.com">hello@barokgroup.com</a></p>
+          <p>Call: <a href="tel:+1(904) 478-9306">(904) 478-9306</a><br/>Email: <a href="mailto:hello@barokgroup.com">hello@barokgroup.com</a></p>
         </div>
       </div>
       <div className="container small">© 2025 Barok Group. All rights reserved.</div>
