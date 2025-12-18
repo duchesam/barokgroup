@@ -1,336 +1,121 @@
 // pages/options.js
 import Head from "next/head";
 
-const options = [
-  {
-    title: "Reinstatement",
-    blurb:
-      "Pay the past-due amount (plus fees) to bring the loan current and stop the foreclosure timeline.",
-  },
-  {
-    title: "Repayment Plan",
-    blurb:
-      "Spread the arrears over several months and add them to your regular payment until you’re current.",
-  },
-  {
-    title: "Forbearance",
-    blurb:
-      "Your lender temporarily reduces or pauses payments while you stabilize income and plan next steps.",
-  },
-  {
-    title: "Loan Modification",
-    blurb:
-      "Restructure terms (rate, term length, capitalization of arrears) to make payments affordable long-term.",
-  },
-  {
-    title: "Refinance",
-    blurb:
-      "Replace the current mortgage with a new loan to pay off arrears and reset the clock (credit/income required).",
-  },
-  {
-    title: "Cash Sale",
-    blurb:
-      "Sell fast for cash, avoid showings/repairs, and use proceeds to pay off the loan and any liens.",
-  },
-  {
-    title: "Short Sale",
-    blurb:
-      "With lender approval, sell for less than what’s owed and settle the debt to avoid auction.",
-  },
-  {
-    title: "Deed in Lieu",
-    blurb:
-      "Voluntarily transfer the deed to the lender to satisfy the debt and avoid a foreclosure on record.",
-  },
-  {
-    title: "Chapter 13 Bankruptcy",
-    blurb:
-      "Court-approved plan to repay arrears over time; the automatic stay can immediately pause foreclosure.",
-  },
-  {
-    title: "Auction Rescue / Buyback",
-    blurb:
-      "Investor purchases the property before auction; you may have a buyback/leaseback path (case-by-case).",
-  },
-];
+export default function Options() {
+  const email = "admin@baruchermi.org";
+  const phoneDisplay = "(904) 478-9306";
+  const phoneLink = "+19044789306";
+  const siteUrl = "https://barokgroup.org";
+  const businessName = "Baruch-Ermi LLC";
 
-export default function OptionsPage() {
+  const title = "Options | Baruch-Ermi LLC";
+  const description =
+    "Clear real-estate paths: purchase, structured terms, and other solutions explained simply and professionally.";
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: title,
+    url: `${siteUrl}/options`,
+    about: {
+      "@type": "Organization",
+      name: businessName,
+      url: siteUrl,
+      email,
+      telephone: phoneLink,
+    },
+  };
+
+  const cards = [
+    {
+      t: "Direct Purchase",
+      d: "A straightforward offer with clear closing steps and timelines.",
+    },
+    {
+      t: "Structured Terms",
+      d: "When terms make sense, we help outline the structure clearly and professionally.",
+    },
+    {
+      t: "Creative Financing (when appropriate)",
+      d: "Options like seller-financed structures may be considered based on the property and goals.",
+    },
+    {
+      t: "Investor Coordination",
+      d: "Clean communication with stakeholders to reduce friction and protect timelines.",
+    },
+    {
+      t: "Consultation First",
+      d: "We start with clarity: your goals, constraints, and the cleanest path forward.",
+    },
+    {
+      t: "Next Steps Plan",
+      d: "A simple plan: documents, deadlines, and what to expect at each stage.",
+    },
+  ];
+
   return (
     <>
       <Head>
-        <title>Options | Baruch Ermi</title>
-        <meta
-          name="description"
-          content="Understand every option to stop foreclosure or resolve mortgage arrears—clearly explained by Baruch Ermi."
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={`${siteUrl}/options`} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={`${siteUrl}/options`} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </Head>
 
-      <header
-        style={{
-          background:
-            "radial-gradient(80% 80% at 50% 0%, #0b1220 0%, #05070d 60%)",
-          color: "white",
-        }}
-      >
-        <nav
-          style={{
-            maxWidth: 1100,
-            margin: "0 auto",
-            padding: "16px 24px",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <a href="/" style={{ fontWeight: 800, fontSize: 20 }}>
-            Barok Group
-          </a>
-          <div style={{ display: "flex", gap: 20 }}>
-            <a href="/options">Options</a>
-            <a href="/services">Services</a>
-            <a href="/faq">FAQ</a>
-            <a href="/contact">Contact</a>
+      <main style={{ minHeight: "100vh", background: "#0b1220", color: "#fff" }}>
+        <header style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
+          <div style={{ maxWidth: 1100, margin: "0 auto", padding: "22px 20px", display: "flex", justifyContent: "space-between", gap: 16, alignItems: "center" }}>
+            <a href="/" style={{ color: "#fff", textDecoration: "none", fontWeight: 800 }}>Baruch-Ermi LLC</a>
+            <nav style={{ display: "flex", gap: 16, fontSize: 14 }}>
+              <a href="/services" style={{ color: "#fff" }}>Services</a>
+              <a href="/options" style={{ color: "#fff" }}>Options</a>
+              <a href="/contact" style={{ color: "#fff" }}>Contact</a>
+            </nav>
           </div>
-          <a
-            href="/contact"
-            style={{
-              background: "#2563eb",
-              padding: "10px 14px",
-              borderRadius: 8,
-              color: "white",
-              fontWeight: 600,
-            }}
-          >
-            Get Free Offer
-          </a>
-        </nav>
+        </header>
 
-        <section
-          style={{
-            maxWidth: 1100,
-            margin: "0 auto",
-            padding: "48px 24px 24px",
-            display: "grid",
-            gridTemplateColumns: "1.1fr 0.9fr",
-            gap: 28,
-          }}
-        >
-          <div>
-            <h1 style={{ fontSize: 42, lineHeight: 1.1, margin: "0 0 12px" }}>
-              Your Options to Stop Foreclosure
-            </h1>
-            <p style={{ opacity: 0.9, fontSize: 18 }}>
-              We walk you through every path—fast, honest, and pressure-free—so
-              you can choose what’s right for your family, not ours.
+        <section style={{ padding: "56px 20px 22px" }}>
+          <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+            <h1 style={{ fontSize: 40, lineHeight: 1.1, margin: 0 }}>Options</h1>
+            <p style={{ marginTop: 14, fontSize: 16, maxWidth: 760, color: "rgba(255,255,255,0.8)" }}>
+              We keep things simple: present the paths, explain the tradeoffs, and move forward with the cleanest plan.
             </p>
 
-            <div
-              style={{
-                marginTop: 22,
-                display: "flex",
-                gap: 14,
-                flexWrap: "wrap",
-              }}
-            >
-              <a
-                href="/contact"
-                style={{
-                  background: "white",
-                  color: "#0b1220",
-                  padding: "12px 16px",
-                  borderRadius: 10,
-                  fontWeight: 700,
-                }}
-              >
-                Talk to a Specialist
+            <div style={{ marginTop: 22, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 16 }}>
+              {cards.map((c) => (
+                <div key={c.t} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.10)", padding: 18, borderRadius: 14 }}>
+                  <div style={{ fontWeight: 800 }}>{c.t}</div>
+                  <div style={{ marginTop: 8, opacity: 0.8, lineHeight: 1.6 }}>{c.d}</div>
+                </div>
+              ))}
+            </div>
+
+            <div style={{ marginTop: 26, display: "flex", gap: 12, flexWrap: "wrap" }}>
+              <a href="/contact" style={{ background: "#fff", color: "#0b1220", padding: "12px 16px", borderRadius: 10, fontWeight: 800, textDecoration: "none" }}>
+                Discuss your situation
               </a>
-              <a
-                href="tel:+15712753720"
-                style={{
-                  border: "1px solid rgba(255,255,255,0.25)",
-                  padding: "12px 16px",
-                  borderRadius: 10,
-                  color: "white",
-                }}
-              >
-                Call (571) 275-3720
+              <a href={`mailto:${email}`} style={{ border: "1px solid rgba(255,255,255,0.2)", padding: "12px 16px", borderRadius: 10, color: "#fff", textDecoration: "none", fontWeight: 700 }}>
+                {email}
+              </a>
+              <a href={`tel:${phoneLink}`} style={{ border: "1px solid rgba(255,255,255,0.2)", padding: "12px 16px", borderRadius: 10, color: "#fff", textDecoration: "none", fontWeight: 700 }}>
+                {phoneDisplay}
               </a>
             </div>
           </div>
-
-          <div
-            style={{
-              overflow: "hidden",
-              borderRadius: 14,
-              border: "1px solid rgba(255,255,255,0.12)",
-            }}
-          >
-            <img
-              alt="Homeowner discussing options"
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
-            />
-          </div>
         </section>
-      </header>
 
-      {/* Video + explainer */}
-      <section
-        style={{
-          maxWidth: 1100,
-          margin: "0 auto",
-          padding: "40px 24px",
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: 28,
-        }}
-      >
-        <div
-          style={{
-            position: "relative",
-            paddingBottom: "56.25%",
-            height: 0,
-            overflow: "hidden",
-            borderRadius: 12,
-            boxShadow: "0 6px 24px rgba(0,0,0,0.12)",
-          }}
-        >
-          <iframe
-            src="https://www.youtube.com/embed/7-o9dewIYFc"
-            title="Foreclosure Options"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-            }}
-          />
-        </div>
-        <div>
-          <h2 style={{ marginTop: 0 }}>How we help you choose</h2>
-          <ul style={{ lineHeight: 1.7, paddingLeft: 18 }}>
-            <li>We map deadlines (notice, sale date) and urgent actions.</li>
-            <li>We explain lender programs and investor alternatives.</li>
-            <li>We estimate timelines, costs, and credit impact for each path.</li>
-            <li>No pressure—just facts so you decide confidently.</li>
-          </ul>
-        </div>
-      </section>
-
-      {/* Options grid */}
-      <section
-        style={{
-          background: "#0f172a",
-          color: "white",
-          marginTop: 8,
-          padding: "40px 0",
-        }}
-      >
-        <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 24px" }}>
-          <h2 style={{ marginTop: 0 }}>Every Option, Clearly Explained</h2>
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-              gap: 18,
-              marginTop: 16,
-            }}
-          >
-            {options.map((o) => (
-              <article
-                key={o.title}
-                style={{
-                  background: "rgba(255,255,255,0.04)",
-                  border: "1px solid rgba(255,255,255,0.08)",
-                  borderRadius: 12,
-                  padding: 16,
-                }}
-              >
-                <h3 style={{ margin: "0 0 6px", fontSize: 18 }}>{o.title}</h3>
-                <p style={{ margin: 0, opacity: 0.9 }}>{o.blurb}</p>
-              </article>
-            ))}
+        <footer style={{ borderTop: "1px solid rgba(255,255,255,0.08)", marginTop: 40 }}>
+          <div style={{ maxWidth: 1100, margin: "0 auto", padding: "20px", fontSize: 14, opacity: 0.7 }}>
+            © {new Date().getFullYear()} Baruch-Ermi LLC · barokgroup.org · {email}
           </div>
-
-          <div
-            style={{
-              marginTop: 28,
-              padding: 18,
-              borderRadius: 12,
-              background: "rgba(255,255,255,0.06)",
-              border: "1px solid rgba(255,255,255,0.08)",
-            }}
-          >
-            <strong>Heads-up:</strong> Lender rules vary by state and investor
-            (FHA/VA/Conventional). We’ll verify what you qualify for and line up
-            paperwork fast.
-          </div>
-        </div>
-      </section>
-
-      {/* CTA strip */}
-      <section
-        style={{
-          maxWidth: 1100,
-          margin: "0 auto",
-          padding: "30px 24px 60px",
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: 18,
-          alignItems: "center",
-        }}
-      >
-        <div>
-          <h2 style={{ margin: 0 }}>Talk through your options in 10 minutes.</h2>
-          <p style={{ marginTop: 6 }}>
-            Call or email—no pressure, no obligation.
-          </p>
-        </div>
-        <div style={{ justifySelf: "end", display: "flex", gap: 12 }}>
-          <a
-            href="tel:+(904) 478-9306"
-            style={{
-              background: "#2563eb",
-              color: "white",
-              padding: "12px 16px",
-              borderRadius: 10,
-              fontWeight: 700,
-            }}
-          >
-            (571) 275-3720
-          </a>
-          <a
-            href="mailto:admin@baruchermi.org"
-            style={{
-              border: "1px solid #2563eb",
-              color: "#2563eb",
-              padding: "12px 16px",
-              borderRadius: 10,
-              fontWeight: 700,
-            }}
-          >
-            admin@baruchermi.org
-          </a>
-        </div>
-      </section>
-
-      <footer
-        style={{
-          borderTop: "1px solid rgba(0,0,0,0.08)",
-          padding: "28px 24px",
-          textAlign: "center",
-        }}
-      >
-        <small>
-          © {new Date().getFullYear()} Baruch Ermi. All rights reserved.{" "}
-          <a href="/terms">Terms &amp; Conditions</a>
-        </small>
-      </footer>
+        </footer>
+      </main>
     </>
   );
 }
