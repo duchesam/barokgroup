@@ -2,3 +2,11 @@ node_modules
 .next
 .env
 .DS_Store
+
+# Local builds
+node_modules
+.next
+out
+.vercel
+package-lock.json
+.DS_Store
